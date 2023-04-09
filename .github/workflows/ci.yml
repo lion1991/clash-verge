@@ -1,14 +1,14 @@
 name: Release CI
 
-# on:
-#   workflow_dispatch:
-#   push:
-#     tags:
-#       - v**
-      
 on:
-  release:
-    types: [created,published] # 表示在创建新的 Release 时触发
+  workflow_dispatch:
+  push:
+    tags:
+      - v**
+      
+# on:
+#   release:
+#     types: [created,published] # 表示在创建新的 Release 时触发
 
 
 env:
